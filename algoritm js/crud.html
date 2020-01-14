@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>crud</title>
+</head>
+<body>
+	<div id="container" style="width:700px;">
+		
+	</div>
+
+	<script>
+		let crudApp = new function() {
+			this.myCars = [
+				{ ID: '1', Car_Name: 'Kia u2', Category: 'Sedan', Price: 12.300 },
+				{ ID: '1', Car_Name: 'Reno wrz turbo', Category: 'Sport', Price: 11.900 },
+				{ ID: '1', Car_Name: 'Ford p9', Category: 'Coupe', Price: 14.000 }
+			];
+
+			this.category = [
+				'Business', 'Econom', 'Average', 'SUV', 'Premium', 'Coupe'
+			];
+			this.col = [];
+		
+		this.createTable = function() {
+//extract value for table header
+			for(let i =0; i < this.myCars.length; i++) {
+					for (let key in this.myCars[i]) {
+						if(this.col.indexOf(key) === -1) {
+							this.col.push(key);
+						}
+					}
+			}
+
+			//create table
+			let table = document.createElement('table');
+			table.setAttribute('id', 'carsTable'); // set table id
+			let tr = table.insertRow(-1);  // CREATE A ROW (FOR HEADER).
+
+			for(let h=0; h < this.col.length; h++) {
+				//add table header
+			}
+
+		}
+		}
+
+	</script>
+</body>
+</html>

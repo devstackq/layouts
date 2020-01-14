@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Button</title>
+    </head>
+    <body>
+        <button  id="btn"> 0 </button>
+    </body>
+    <script>
+    	  let btnValue = document.getElementById('btn');
+let count = 0;
+btnValue.innerHTML = count;
+btnValue.addEventListener('click', function() {
+    btnValue.innerHTML = ++count;
+})
+    </script>
+</html>
+

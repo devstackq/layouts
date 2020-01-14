@@ -1,0 +1,131 @@
+.case {
+	width: 100%;
+	
+	background: #f4f5f9;
+	position: relative;	
+}
+/*.case-wrapper {
+	padding: 40px 0 200px;
+	}*/
+
+	.case-study {
+		text-align: center;
+	}
+	.case-study__header{
+		padding-top: 50px;	
+		text-transform: uppercase;
+		letter-spacing: 3px;
+		font-weight: bold;
+		font-size: 2em;
+		color:#413d4b;
+	}
+	.case-study p{
+		margin: 30px 0;
+		font-size: 12px;
+	}
+	.case-wrapper {
+		width: 100%;
+		height: 100vh;
+		padding: 2%;
+		display: flex;
+		position: relative;
+		box-sizing: border-box;
+	}
+
+	.case-accumulate {
+
+		width: 500px;
+		height: 500px;
+		padding: 50px;
+		/*border: 1px solid blue;*/
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		text-align: center;
+		z-index: 2;
+		position: absolute;
+		left: 20%;
+		top: 22%;
+		background: #fff;
+		line-height: 2;
+		font-size: 12px;
+	}
+
+
+	.case__bg {
+		background-image: url('../../images/study.jpg');
+		/*background-position: top center;*/
+		background-size: cover;
+		background-repeat: no-repeat;
+		z-index: 1;
+		position: absolute;
+		left: 50%;
+		top: 15%;
+		/*transition: translate(-50%, -50%);*/	
+		width: 500px;
+		height: 600px;
+	}
+
+	.case__button {
+		box-sizing: border-box;
+		margin: 50px auto 0;
+		width: 140px;
+		height: 40px;
+		background: #e74c3c;
+		text-transform: uppercase;
+		color: #fff;
+		font-weight: 600;
+		/*font-size: 12px;*/
+		/*padding: 2% 5%;*/
+		font-size: 12px;
+		border: none;
+		border-radius: 5%;
+	}
+
+	.case__header {
+		margin-top: 20px;	
+		font-size: 18px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+	.case__img {
+		width: 25%;
+		margin: 0 auto;
+	}
+
+
+	@media (max-width: 768px) {
+
+		.case-accumulate {
+
+			width: 350px;
+			height: 350px;
+			padding: 30px;
+			left: 3%;
+			top: 14%;
+			background: #fff;
+			line-height: 2;
+			font-size: 12px;
+		}
+
+
+		.case__bg {
+			
+			position: absolute;
+			left: 40%;
+			top: 10%;
+			width: 350px;
+			height: 400px;
+		}
+		.case-study p{
+			margin: 15px 0;
+			font-size: 10px;
+		}
+
+		.case__button {
+			
+			margin: 30px auto 0;
+			padding: 2% 6%;
+			font-size: 10px;
+
+		}

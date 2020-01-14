@@ -1,0 +1,157 @@
+.price{
+	color: #000;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	margin: 50px 0;
+}
+
+
+.price-header {
+	text-align: center;
+	line-height: 2;
+	margin-bottom: 40px;
+}
+
+
+.price-header h2{
+	font-size: 36px;
+	font-weight: bold;
+	color: #6a6a6a;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.price-header p{
+	font-size: 14px;
+	color: #d3d3d3;
+}
+.price-box-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center	
+	
+}
+
+.price-box {
+
+	height: 440px;
+	width: 300px;
+	/*outline: 10px  solid green;*/
+	/*padding: 30px;*/
+	margin-left: 20px;
+	position: relative;
+	margin-top: 40px;
+}
+
+.price-box__header {
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 2px;	
+	text-align: center;
+	padding: 30px;
+
+}
+
+.price-box__t{
+	/*padding: 30px;*/
+	width: 100%;
+	height: 30%;
+	background: #999;
+	color: #fff;
+}
+
+.price-box__r {
+	line-height: 2.2;
+	text-align: center;
+	padding: 70px 30px 30px 30px;
+	color: #b0b0b1;
+	width: 100%;
+	height: 70%;
+	background: #f4f5f9;
+}
+.price-item {
+	background: #fff;
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	border-radius: 50%;
+
+	top: 85px;
+	right: 100px;
+}
+
+.price-item__header {
+	position: absolute;
+	color: #999;
+	top:25%;
+	left:25%;
+	font-size: 28px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.price-item__text{
+	position: absolute;
+	text-align: center;
+	top:60%;
+	left:20%;
+	font-size: 12px;
+	color: #999;
+}
+
+.price-box__button {
+	background: #999;
+	margin: 30px 0;
+	width: 120px;
+	padding: 3.4% 5%;
+	border-radius: 5%;
+	border: none;
+	color: #fff;
+	text-transform: uppercase;
+
+}
+
+.price-box:hover .price-box__button{
+	cursor: pointer;
+	background: #e74c3c;
+
+}
+.price-box:hover .price-box__t{
+	cursor: pointer;
+	background: #e74c3c;
+
+}
+
+.price-box:hover .price-item {
+	box-shadow: 0 0 10px #fff;
+
+
+}
+
+@media (max-width: 1024px) {
+
+	.price-box {
+
+		margin-left: 10px;
+
+	}
+
+	.price-box {
+		margin-top: 40px;
+	}
+}
+
+
+@media (max-width: 768px) {
+	.price-box-wrapper {
+		display: flex;
+		flex-wrap: wrap;	
+	}
+	
+	.price-box {
+		margin-left: 10px;
+		margin-bottom: 10px;
+	}
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="css/normalize.css"> -->
+	<!-- 	<link rel="stylesheet" href="css/magnific-popup.css"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="авто, вертолеты, самолеты, истрибители, бтр, ракетные установки, авто в Алматы, мото, мотоциклы, мотоциклы алматы, люкс машины алматы"/>
+	<title> Registration form	</title>
+
+
+	<style>
+	body{
+		background-image: url(images/17084.jpg);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+</style>
+</head>
+<body >
+	<!-- 	<section class="main clearfix"> -->
+		<header>
+			<nav class="nav" tabindex="0"><!-- <marquee> -->
+				<ul> 
+					<li><a  id="main" href="index.html" tabindex="0">Main</a></li>
+					<!-- 	<li><a href="#mazda" aria-label="Mazda" >Mazda</a></li> -->
+					<li><a href="lux-auto.html" target="_blank" tabindex="0">Luxury</a></li>
+					<li><a href="moto.html" target="_blank" tabindex="0">Motorcycle</a></li>
+					<li><a href="helicopter.html"  target="_blank" tabindex="0">Helicopter</a></li>
+					<li><a href="air.html" target="_blank" tabindex="0">Airplaine</a></li>
+					<li><a href="yacht.html" target="_blank" tabindex="0">Yacht</a></li>
+					<li><a href="especially.html" target="_blank" tabindex="0">Especial</a></li>
+<!-- 
+	<li><a href="products.html" target="_blank">Products</a></li> -->
+	
+	<!-- <input type="button" value="Log in" onclick="window.open('form.html','My Windows', 'height=400, width=400, top=100, left=500, scrollbars=no, resizable=no')"/> --> 
+	<li><a tabindex="0" onclick='document.getElementById("loginPage").style.display = "block";'>Log in </a> </li>
+	<div class="search">
+		<form  action="/search.php" method="get">
+			<input type="query" type="search"	value$==0>
+			<input type="submit"  value="Search">
+		</form></div>
+	</ul>
+</nav>
+</header>	<br>
+
+<section id="loginPage" >
+	<!--   <a href="javascript:PopUpShow()">Show popup</a> -->
+	<!-- 	<a href="#login"></a> -->
+	<!-- <details>
+		<summary id="sum">click</summary> -->
+<div id="popup">
+<div class="wrapper" style="margin-top:150px">	
+				<!-- 	<div class="register-form"> -->
+	<p class="popup-head"><a onclick='document.getElementById("loginPage").style.display = "none";'>Close</a></p><br>	
+	<h3>Authentication</h3> 
+		<form action="mail.php" class="animated bounceInUp register-form">
+		<p><label for="email">Enter the Email: <input type="email" name="email" placeholder="email.."> </label>  	</p>
+		<p><label for="password">Enter the Password:<input type="password" name="password" placeholder="password"> </label>	</p>
+		<button>Login <!-- <a href="mail.php">Login</a> --></button><br>
+		<p class="message">Not registered ?  
+		<a href="registration.html" target="_blank">Registry</a></p>
+		</form>
+	</div>
+ </div>
+</div>
+</section>
+ <section class="animated flipInX login-page" tabindex="0"> 
+<!-- 	<a href="http://calendar.yuretz.ru" title="Календар"><img border="0" src="http://i.calendar.yuretz.ru/informer/grey.png" title="Календари на любой год" alt="Календарь"></a> -->
+
+<div class="animated shake wrapper" 	tabindex="0">
+<form action="" class="register-form">
+	<p><label for="name">Name: <input type="text" name="name" placeholder="name.."></label></p>
+	<p><label for="surname">Surname:<input type="text" name="surname" placeholder="surname"></label></p>
+	<p><label for="phone">Phone:<input type="number" name="phone" placeholder="phone"> </label></p>
+		<p>	<label> Your city:	<input list="smooze" placeholder="city">
+</label></p>
+  <datalist id="smooze">
+  <option value="Astana">
+  <option value="Almaty">
+  <option value="Shimkent">
+  <option value="Karaganda">
+  <option value="Zhezkazgan">
+  <option value="Aktau">
+  <option value="Atyrau">
+  <option value="Petropavlsk">
+  <option value="Pavlodar">
+  <option value="Kostanai">
+  <option value="Ustk-kamenogorsk">
+  <option value="Semipalatinsk">
+ </datalist>
+<fieldset>
+	<div class="sex">
+		<label for=""> <input type="radio" name="gendre" class="radio" >Man</label>
+		<label for=""><input type="radio" name="gendre" class="radio">Woman</label>	
+	</div>
+</fieldset>
+<input type="range" name="radio">
+	<label for="">Avatar:<input type="file"></label>	
+	<button>Register<!-- <a href="mail.php">Register</a> --></button>
+
+	<p class="message">Already Registered? <a href="index.html">Login</a></p>
+</form>
+	   </details>
+    </div>
+  </section>
+ </body>
+</html>
+

@@ -1,0 +1,15 @@
+@import url('./vendor/reset.css');
+@import url('./custom/history.css');
+@import url('./custom/header.css');
+@import url('./custom/services.css');
+@import url('./vendor/slick.css');
+@import url('./vendor/slick-theme.css');
+@import url('./custom/slider.css');
+@import url('./custom/modal.css');
+@import url('./custom/recent.css');
+@import url('./custom/case.css');
+@import url('./custom/counter.css');
+@import url('./custom/price.css');
+@import url('./custom/animation.css');
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');

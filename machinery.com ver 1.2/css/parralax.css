@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+html {
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  margin: 0;
+  padding: 0;
+  perspective: 1px; 
+  transform-style: preserve-3d;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: 'Amatic SC', cursive;
+  color: #000;
+}
+header {
+  box-sizing: border-box;
+  min-height: 100vh;
+  text-align: center;
+  padding-top: 20%;
+  transform-style: inherit;
+  width: 100vw;
+}
+header::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  transform-origin: center;
+  min-height: 100vh;
+  background-image: url("../images/pavel-anoshin-743434-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: 2s;
+  /* Параллакс */
+  transform: translateZ(-1px) scale(2);
+}
+
+header h1 {
+  margin-top: -60px;
+  font-size: 42px;
+}

@@ -1,0 +1,44 @@
+.tasks {
+	font-size: 20px;
+	font-weight: 700;
+	color: brown;
+
+}
+
+.task-container {
+	
+	display: flex;
+	-ms-align-items: center;
+	align-items: center;
+	justify-content: center;
+}
+.task-wrapper {
+	/*padding: 10px;*/
+	margin: 10px auto;
+	
+	padding: 8px;
+	border: 1px dotted white;
+	width: 70%;
+	box-shadow: 0 0 10px white;
+}
+.btn-checkbox {
+	cursor: pointer;
+	padding: 6px 10px;
+	color: #fff;
+	background: lime;
+	border: none;
+}
+.btn-edit {
+	cursor: pointer;
+	padding: 6px 10px;
+	color: #fff;
+	background: tomato;
+	border: none;
+}
+.btn-delete {
+	cursor: pointer;
+	padding: 6px 10px;
+	color: #fff;
+	background: blue;
+	border: none;
+}

@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Simple present tense verbs</title>
+	<style type="text/css">
+	body{
+		margin: 0;
+		padding: 0;
+		background: #000;
+		/*		background: #000;*/
+	}
+	#container{
+		border: 1px solid black;
+		background: azure;
+	/*	display: block;
+	margin: 0 auto;*/
+	text-align: center;
+	transition: 5s;
+	position: relative;
+}
+#container input{
+	position: absolute;
+	padding: 12px 18px;
+	font-size: 14px;
+	margin:0 auto;
+	background: #000;
+	outline: none;
+	border: none;
+	color: white;
+}
+#container input::placeholder{
+	color: green;
+	}#container h2{
+		color: green;
+		/*	color: white;*/
+		text-shadow: 2px 2px 2px white;
+	}
+	#outputText {
+		transition: 5s;
+		transform:rotateY(50deg, 20deg);
+		width: 50%;
+		text-align: center;
+		margin: 0 auto;
+		background: azure;
+		color: blue;
+	}
+	#additional{
+		display: block;
+		color: blue;
+		font-size: 18px;
+		margin-top: 20px;
+	}
+	#button{
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		background: url('if_--07_1720774.png')no-repeat;
+		background-size: contain;
+		margin-left: 200px;
+		margin-top: -5px;
+	}
+	#button:hover, active{
+		outline: none;
+		border: none;
+		cursor: pointer;
+		border: 1px solid green;		}
+		#intro{
+			font-size: 20px;
+			border: 1px dotted black;
+			padding: 0 15px;
+			color: green;
+		}
+		#pronouns{
+			display: block;
+			margin-left: 400px;
+			margin: 0 auto;
+		}
+	</style>
+
+</head>
+<body><!-- 
+	<table>
+		
+		<tr>
+			<th>
+zagolovok
+			</th>
+			<td>sasa	</td>
+		</tr>
+	//input - слово на русском = выходить перевод на английский
+
+	</table>
+	//выводить словаиз базы данных, при вводе на одно слово
+	<form method="POST" >
+	<input type="" name="">
+	<input type="text" name="letter">
+</form> -->
+
+<div id="container">  <h1>Present tense verbs</h1>
+
+	<input type="text" id="inputValue" placeholder="enter the word, small letters">
+<!-- 		<p>past simple | past parciple | translate</p>
+-->		<button onclick="translateWords()" id="button"></button>
+<h3 id="outputText"></h3>
+<script>
+	function translateWords() {
+		var text;
+		var words = document.getElementById("inputValue").value;
+				// words[i].value.toUpperCase();
+
+				switch(words) {
+
+					case "be" :
+					text = '<h2> WERE  --- BEEN --- БЫТЬ </h2>';
+					break;
+					case "have":
+					text = '<h2>had | had | Иметь<h2>';
+					break;
+					case "do":
+					text = '<h2>did --- done --- Делать<h2>';
+					break;	
+					case "say":
+					text = '<h2>said --- said --- говорить<h2>';
+					break;
+					case "go":
+					text = '<h2>went --- gone --- идти<h2>';
+					break;
+					case "get":
+					text = '<h2>got --- got --- получать<h2>';
+					break;
+					case "make":
+					text = '<h2>made --- made --- делать<h2>';
+					break;
+					case "know":
+					text = '<h2>knew --- known --- знать<h2>';
+					break;
+					case "think":
+					text = '<h2>thought	--- thought --- думать<h2>';
+					break;
+					case "take":
+					text = '<h2>took	--- taken --- брать<h2>';
+					break;
+
+
+					case "see":
+					text = '<h2>saw	--- seen --- видеть<h2>';
+					break;
+
+					case "come":
+					text = '<h2>came	--- come --- приходить<h2>';
+					break;
+					case "want":
+					text = '<h2>wanted	--- wanted --- хотеть<h2>';
+					break;
+					case "use":
+					text = '<h2>used	--- used --- использовать<h2>';
+					break;
+					case "find":
+					text = '<h2>found	--- found --- находить<h2>';
+					break;
+					case "give":
+					text = '<h2>gave	--- given --- давать<h2>';
+					break;
+
+					case "tell":
+					text = '<h2>told	--- told --- говорить<h2>';
+					break;
+
+					case "work":
+					text = '<h2>worked	--- worked --- работать<h2>';
+					break;
+
+					case "call":
+					text = '<h2>called	--- called --- звать(звонить)<h2>';
+					break;
+
+					case "try":
+					text = '<h2>tried	--- tried --- пытаться<h2>';
+					break;
+					case "ask":
+					text = '<h2>asked	--- asked --- просить(спрашивать)<h2>';
+					break;
+
+					case "need":
+					text = '<h2>needed	--- needed --- нуждаться<h2>';
+					break;
+					case "feel":
+					text = '<h2>felt	--- felt --- чувствовать<h2>';
+					break;
+					case "become":
+					text = '<h2>became	--- become--- становиться<h2>';
+					break;
+					case "leave":
+					text = '<h2>left	--- left --- оставлять<h2>';
+					break;
+					case "put":
+					text = '<h2>put	--- put --- класть(ставить)<h2>';
+					break;
+					case "mean":
+					text = '<h2>meant	--- meant --- значить<h2>';
+					break;
+					case "keep":
+					text = '<h2>kept	--- kept --- хранить<h2>';
+					break;
+					case "let":
+					text = '<h2>let	--- let --- позволять<h2>';
+					break;
+					case "begin":
+					text = '<h2>began	--- begun --- начинать<h2>';
+					break;
+					case "seem":
+					text = '<h2>seemed	--- seemed --- казаться<h2>';
+					break;
+
+					case "help":
+					text = '<h2>helped	--- helped --- помогать<h2>';
+					break;
+
+
+					case "show":
+					text = '<h2>showed	--- shown --- показывать<h2>';
+					break;
+
+					case "hear":
+					text = '<h2>heard	--- heard --- слышать<h2>';
+					break;
+
+					case "play":
+					text = '<h2>played	--- played --- играть<h2>';
+					break;
+
+					case "run":
+					text = '<h2>ran	--- run --- бежать<h2>';
+					break
+							case "move":
+					text = '<h2>moved	--- moved --- двигаться<h2>';
+					break;
+							case "live":
+					text = '<h2>lived	--- lived --- жить<h2>';
+					break;
+							case "believe":
+					text = '<h2>believed	--- believed --- верить<h2>';
+					break;
+							case "bring":
+					text = '<h2>brought	--- brought --- приносить<h2>';
+					break;
+							case "happen":
+					text = '<h2>happened	--- happened --- случаться<h2>';
+					break;
+							case "write":
+					text = '<h2>wrote	--- written --- писать<h2>';
+					break;
+							case "sit":
+					text = '<h2>sat	--- sat --- сидеть<h2>';
+					break;
+							case "stand":
+					text = '<h2>stood	--- stood --- стоять<h2>';
+					break;
+							case "lose":
+					text = '<h2>lost	--- lost --- терять<h2>';
+					break;
+							case "pay":
+					text = '<h2>paid	--- paid --- платить<h2>';
+					break;
+							case "meet":
+					text = '<h2>met	--- met --- встречать<h2>';
+					break;
+		case "include":
+					text = '<h2>included	--- included --- включать<h2>';
+					break;
+							case "continue":
+					text = '<h2>continued	--- continued --- продолжать<h2>';
+					break;
+							case "set":
+					text = '<h2>set	--- set --- устанавливать<h2>';
+					break;
+							case "learn":
+					text = '<h2>learnt	--- learnt/learned --- учить<h2>';
+					break;
+							case "change":
+					text = '<h2>changed	--- changed --- менять<h2>';
+					break;
+							case "lead":
+					text = '<h2>led	--- led --- вести<h2>';
+					break;
+							case "understand":
+					text = '<h2>understood	--- understood --- понимать<h2>';
+					break;
+							case "watch":
+					text = '<h2>watched	--- watched --- смотреть<h2>';
+					break;
+							case "follow":
+					text = '<h2>followed	--- followed --- следовать<h2>';
+					break;
+							case "stop":
+					text = '<h2>stopped	--- stopped --- останавливать<h2>';
+					break;
+							case "create":
+					text = '<h2>created	--- created --- создавать<h2>';
+					break;
+							case "speak":
+					text = '<h2>spoke	--- spoken --- говорить<h2>';
+					break;
+							case "read":
+					text = '<h2>read	--- read --- читать<h2>';
+					break;
+							case "spend":
+					text = '<h2>spent	--- spent --- тратить<h2>';
+					break;
+							case "grow":
+					text = '<h2>grew	--- grown --- расти<h2>';
+					break;
+							case "open":
+					text = '<h2>opened	--- opened --- открывать<h2>';
+					break;
+							case "walk":
+					text = '<h2>walked	--- walked --- идти<h2>';
+					break;
+							case "win":
+					text = '<h2>won	--- won --- побеждтаь<h2>';
+					break;
+							case "teach":
+					text = '<h2>taught	--- taught --- учить<h2>';
+					break;
+							case "offer":
+					text = '<h2>offered	--- offered --- предлагать<h2>';
+					break;
+							case "remember":
+					text = '<h2>remembered	--- remembered --- помнить<h2>';
+					break;
+							case "consider":
+					text = '<h2>considered	--- considered --- считать<h2>';
+					break;
+
+							case "appear":
+					text = '<h2>appeared	--- appeared --- появляться<h2>';
+					break;
+							case "buy":
+					text = '<h2>bought	--- bought --- покупать<h2>';
+					break;
+							case "serve":
+					text = '<h2>served	--- served --- служить<h2>';
+					break;
+		case "die":
+					text = '<h2>died	--- died --- умирать<h2>';
+					break;
+							case "send":
+					text = '<h2>sent	--- sent --- посылать<h2>';
+					break;
+							case "build":
+					text = '<h2>build	--- built --- строить<h2>';
+					break;
+							case "stay":
+					text = '<h2>stayed	--- stayed --- оставаться<h2>';
+					break;
+							case "fall":
+					text = '<h2>fell	--- fallen --- падать<h2>';
+					break;
+							case "cut":
+					text = '<h2>cut	--- cut --- резать<h2>';
+					break;
+							case "reach":
+					text = '<h2>reached	--- reached --- достигать<h2>';
+					break;
+							case "kill":
+					text = '<h2>killed	--- killed --- убивать<h2>';
+					break;
+							case "raise":
+					text = '<h2>raised	--- raised --- поднимать<h2>';
+					break;
+							case "pass":
+					text = '<h2>passed	--- passed --- миновать<h2>';
+					break;
+							case "sell":
+					text = '<h2>sold	--- sold --- продавать<h2>';
+					break;
+							case "decide":
+					text = '<h2>decided	--- decided --- решать<h2>';
+					break;
+							case "return":
+					text = '<h2>returned	--- returned --- возвращаться<h2>';
+					break;
+							case "explain":
+					text = '<h2>explained	--- explained --- объяснять<h2>';
+					break;
+							case "hope":
+					text = '<h2>hoped	--- hoped --- надеяться<h2>';
+					break;
+							case "develop":
+					text = '<h2>developed	--- developed --- развивать<h2>';
+					break;
+							case "carry":
+					text = '<h2>carried	--- carried --- везти/нести<h2>';
+					break;
+							case "break":
+					text = '<h2>broke	--- broken --- ломать<h2>';
+					break;
+							case "recieve":
+					text = '<h2>recieved	--- recieved --- получать<h2>';
+					break;
+							case "agree":
+					text = '<h2>agreed	--- agreed --- соглашаться<h2>';
+					break;
+							case "support":
+					text = '<h2>supported	--- supported --- поддерживать<h2>';
+					break;
+		case "hit":
+					text = '<h2>hit	--- hit --- ударять<h2>';
+					break;
+							case "produce":
+					text = '<h2>produced	--- produced --- производить<h2>';
+					break;
+							case "eat":
+					text = '<h2>ate	--- eaten --- есть<h2>';
+					break;
+							case "cover":
+					text = '<h2>covered	--- covered --- покрывать<h2>';
+					break;
+							case "catch":
+					text = '<h2>caught	--- caught --- ловить<h2>';
+					break;
+							case "draw":
+					text = '<h2>drew	--- drawn --- рисовать<h2>';
+					break;
+							case "choose":
+					text = '<h2>chose	--- chosen --- выбирать<h2>';
+					break;
+
+										default:
+					text = '<h2 style="color:orange;">I have never heard of that verb.. please enter other verb</h2>';
+				}
+				document.getElementById("outputText").innerHTML = text.toUpperCase();
+			}
+
+		</script>
+
+		<span id="additional">Additional information
+			00. PSold - Past Simple; 01. PP - Past Participle 02. 03.Translate and other inf
+			about 100 eng verbs, this project
+<!-- 0 - inp(Present Simple verb);
+	1 - output if true case = text -> data == case;  -->
+</span>
+
+	<!-- 		processData(data) {
+				var words = {
+					jump: 'Прыгать', 
+					fly: 'летать', 
+					dance: 'танцевать'
+				};
+
+				for (var prop in words) 
+					console.log(words.jump);
+				console.log(i);
+			} -->
+		</div>
+		<hr>
+		<div id="pronouns">
+			<table style="font-weight: bold;">
+				<colgroup>
+					<col span="2" style="background:khaki">
+					<col style="background-color:lightcyan">
+				</colgroup>
+				<tr>
+					<th>№</th>
+					<th><h3>Possesive pronouns</h3></th>
+					<th><h3>Personal pronouns</h3></th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>MY - МОЙ</td>
+					<td>I - Я </td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>YOUR - ТВОЙ, ВАШ</td>
+					<td>YOU - ТЫ, ВЫ</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>HE - ОН</td>
+					<td>HIS - ЕГО</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>SHE - ОНА</td>
+					<td>HER - ЕЁ</td>
+				</tr>
+				<tr>
+					<td>5</td>
+					<td>WE - МЫ</td>
+					<td>OUR - НАШ</td>
+				</tr>
+				<tr>
+					<td>6</td>
+					<td>THEY - ОНИ</td>
+					<td>THEIR - ИХ</td>
+				</tr>
+				<tr>
+					<td>7</td>
+					<td>IT - ЕГО, ЕЕ</td>
+					<td>ITS - ЕГО, ЕЕ</td>
+				</tr>
+			</table>
+		</div>
+		<hr>
+
+		<div id="intro">
+			<h3 style="text-align: center;">Introduce</h3>
+			<p>
+				-Good afternoon everybody! How are you? 
+				-	
+				So i begin my presentation.
+				How I told you, my name is Bekzhan, I was born in Taraz city, I am 25 years old.
+				I finish school, after entered college, on specialty tech-programmer. In my family, 4 people, this is mom, brother, sister and me.
+				My mom name is Roza she is accounter, my brother name is Nurzhan he is broker, my sister name is Aizhan she is student, and me i do a lot of things.
+				Also we have cat, he is name Sam Wales, he has a lot of wool. I want to know English language, he need me for my work. I understand English speech, but my english speak is bad. I think this is busyness time. I like the atmosphere here, people, and most importantly, you can get knowledge, so do not skip lessons. That is all, thank you.
+			</p>
+		</div>
+		<hr>
+	</body>
+	</html>

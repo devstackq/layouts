@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tests</title>
+	<style type="text/css">
+		form{
+			tac
+		}
+		body{
+			background: #000;
+			color: white;
+			font-size: 18px;
+		}
+		 input{
+padding: 10px 16px;
+font-size: 16px;
+color: green;
+font-weight: bold;
+		}
+		textarea{
+			background: lightblue;
+			color: red;
+		}
+	</style>
+</head>
+<body>
+
+<!-- 
+	<h1>Introduce about self</h1>
+
+	<p>Good afternoon everybody! How are you? 
+		So, I begin my presentation. How I told you, my name is Bekzhan, I was born in Taraz city, I am 2 years old.             
+		I finish school, after entered college, on specialty tech-programmer, after work other places.
+		My family 
+	</p>	
+
+</div> -->
+
+
+<!-- <h2 style="color:white"> 2 project Slideshow words ПРИЛАГАТЕЬНЫЕ</h2>
+<div>
+	img и внутри текст на английском или снизуу ПРИЛАГАТЕЬНЫЕ
+</div>
+<h2>3 project</h2>
+<div>table внутри будут правила TO BE & Present Simple</div>
+
+<h2>4 project Таблица внутри афавит и сразу произношение</h2>
+
+<h2>Question and answer, proto tests</h2> -->
+<!-- 	<h2>4 project Осмыслить код, и ввести свои данные, задачи на проверку</h2>
+h-->	
+<h2>Quiz(Test at to be)</h2>
+<form name="quiz">
+
+	<p><b>1.</b> 
+		<input type="text" name="q1">
+	..David smart and handsome?</p>
+	<b>2.</b> 
+	<input type="text" name="q2">
+..you happy today?</p>
+<b>3.</b> 
+<input type="text" name="q3">
+..she a no cold?</p>
+<b>4.</b> 
+<input type="text" name="q4">
+..we with my hippo ride Safari?</p>
+<b>5.</b> 
+<input type="text" name="q5">
+..they from Astana?</p>
+
+<b>6.</b> 
+<input type="text" name="q6">
+Where ... i now?</p>
+<h4>Do/Does</h4>
+<b>7.</b> 
+<input type="text" name="q7">
+.. she washes dishes?
+</p>
+<b>8.</b> 
+<input type="text" name="q8">
+..  it pineapple come from Shymkent ?</p>
+<b>9.</b> 
+<input type="text" name="q9">
+What color .. they like??</p>
+<b>10.</b> 
+<input type="text" name="q10">
+What .. we need in the morning?</p>
+<b>11.</b> 
+<input type="text" name="q11">
+.. he work with you??</p>
+<input type="text" id="percentage" name=""> correctAnswers<br>
+Correct answers:</b><br>
+
+<textarea name="solutions" rows="13" wrap="virtual" cols="35"></textarea>
+<input onclick="getScore(this.form)" type="button" value="Grade Me">
+<input type="reset" value="Clear">
+</p>
+</form>
+
+<script type="text/javascript">
+	var numQues = 11; // how much quest
+	var answers = new Array(1); // array create 
+	answers[0] = "Is";
+	answers[1] = "Are";
+	answers[2] = "Is";
+	answers[3] = "Are";
+	answers[4] = "Are";
+	answers[5] = "Am";
+	answers[6] = "Does";
+	answers[7] = "Does";
+	answers[8] = "Do";
+	answers[9] = "Do";
+	answers[10] = "Does";
+
+
+	function getScore(form) {
+		var score = 0;
+		for (i=0; i<numQues; i++) {
+			var answer = form.elements[i].value;
+			var answer_length = answer.length;
+			var last_char = answer.charAt(answer_length-1);
+			if (last_char == " ") {
+				form.elements[i].value = (answer.substring(0, answer_length-1)) ; 
+				i=i-1;
+			}
+		}
+		for (i=0; i<numQues; i++) {
+			if (form.elements[i].value.toUpperCase() == answers[i].toUpperCase()) {
+				score++;
+			}
+		}
+
+		score = Math.round(score/numQues*100);
+		form.percentage.value = score + "%";
+		var correctAnswers = "";
+		for (i=1; i<=numQues; i++) {
+			correctAnswers += i + ". " + answers[i-1] + "\r\n";
+		}
+		form.solutions.value = correctAnswers;
+	}
+</script>
+
+</body>
+</html>

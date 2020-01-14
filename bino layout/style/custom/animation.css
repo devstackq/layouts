@@ -1,0 +1,109 @@
+@-webkit-keyframes logo {
+  0%   { left: 50px;}
+  10%   { top: 200px;}
+  20%  { left: 900px;}
+  30%  { top: 500px;}
+  50%  { right: 900px;}
+  
+  60%  { bottom: 900px;}
+  70%  { top: 300px;}
+  80%  { right: 1000px;}
+  90% {left: 0px;}
+  100% {top: 0px;}
+}
+
+
+.logo{
+  position: relative;
+  animation-name: logo;
+  animation-duration: 7s;
+  transition: 2s;
+  /*animation-iteration-count: infinite;*/
+}
+
+.block__text h1 span {
+  display: inline-block;
+  animation: dar 1s  linear forwards;
+}
+
+@keyframes dar {
+  0% {
+    opacity: 0;
+    transform: rotateY(90deg);
+
+  }
+
+100% {
+  opacity: 1;
+  transform: rotateY(0deg);
+}
+}
+
+
+.block__text h1 span:nth-child(1) {
+  animation-delay: 1s;
+}.block__text h1 span:nth-child(2) {
+  animation-delay: 1.5s;
+}.block__text h1 span:nth-child(3) {
+  animation-delay: 2s;
+}.block__text h1 span:nth-child(4) {
+  animation-delay: 2.5s;
+}.block__text h1 span:nth-child(5) {
+  animation-delay: 3s;
+}.block__text h1 span:nth-child(6) {
+  animation-delay: 3.5s;
+}.block__text h1 span:nth-child(7) {
+  animation-delay: 4s;
+}.block__text h1 span:nth-child(8) {
+  animation-delay: 5s;
+}.block__text h1 span:nth-child(9) {
+  animation-delay: 3.5s;
+}.block__text h1 span:nth-child(10) {
+  animation-delay: 3s;
+}.block__text h1 span:nth-child(11) {
+  animation-delay: 2.5s;
+}.block__text h1 span:nth-child(12) {
+  animation-delay: 2s;
+}.block__text h1 span:nth-child(13) {
+  animation-delay: 1.5s;
+}.block__text h1 span:nth-child(14) {
+  animation-delay: 1s;
+}
+
+.treeContainer {
+  
+  background: #222 url('../../images/clipart861376.png');
+  width: 100%;
+  padding: 2%;
+  margin: 0 auto;
+  overflow:auto;
+  color: #fff;
+  font-size: 1.2em; 
+}
+.right-content, .left-content {
+  float:left;
+  display:block;
+  width: 50%;
+  padding:1% 2%;
+}
+.left-content {
+  border-right:5px dotted #666; 
+  text-align:right;
+}
+.left-content p {
+  margin:150px 0 0;
+}
+.right-content p { 
+  margin:80px 0 150px;
+}
+.treeContainer p {
+transition: all 0.7s ease-in-out; 
+-webkit-transition: all 0.7s ease-in-out;
+}
+.left-content .more-padding {
+  padding-right:100px;
+}
+.right-content .more-padding {
+  padding-left:100px;
+}
+  
